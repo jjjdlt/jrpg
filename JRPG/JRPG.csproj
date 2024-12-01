@@ -40,7 +40,6 @@
       <Folder Include="Gameplay\Quests\" />
       <Folder Include="UI\HUD\" />
       <Folder Include="UI\Screens\BattleScreen\" />
-      <Folder Include="UI\Screens\MainMenu\" />
       <Folder Include="UI\Screens\WorldScreen\" />
       <Folder Include="UI\Widgets\" />
       <Folder Include="Util\Extensions\" />

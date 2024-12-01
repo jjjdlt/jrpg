@@ -1,2 +1,4 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"/home/jj/RiderProjects/JRPG/JRPG/Content/background.png","/home/jj/RiderProjects/JRPG/JRPG/Content/bin/DesktopGL/Content/background.xnb","TextureProcessor","Texture2DContent",2530990,8640085,0.2910975
 "/home/jj/RiderProjects/JRPG/JRPG/Content/dummy_spritesheet.jpg","/home/jj/RiderProjects/JRPG/JRPG/Content/bin/DesktopGL/Content/dummy_spritesheet.xnb","TextureProcessor","Texture2DContent",20697,667861,0.103043
+"/home/jj/RiderProjects/JRPG/JRPG/Content/mainmenu.png","/home/jj/RiderProjects/JRPG/JRPG/Content/bin/DesktopGL/Content/mainmenu.xnb","TextureProcessor","Texture2DContent",55636,8294485,0.2634086

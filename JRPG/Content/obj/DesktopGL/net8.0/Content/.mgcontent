@@ -5,8 +5,12 @@
   <Config />
   <SourceFiles>
     <File>/home/jj/RiderProjects/JRPG/JRPG/Content/dummy_spritesheet.jpg</File>
+    <File>/home/jj/RiderProjects/JRPG/JRPG/Content/background.png</File>
+    <File>/home/jj/RiderProjects/JRPG/JRPG/Content/mainmenu.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>
