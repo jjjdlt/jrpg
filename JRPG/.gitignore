@@ -1,0 +1,18 @@
+# MonoGame specific
+Content/bin/
+Content/obj/
+*.mgcb
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio / Rider files
+.vs/
+.idea/
+*.user
+*.suo
+*.cache

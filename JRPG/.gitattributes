@@ -1,0 +1,7 @@
+# Explicitly declare C# files
+*.cs linguist-language=C#
+*.csproj linguist-language=C#
+
+# Exclude generated content and vendor code
+Content/* linguist-vendored
+*/Content/* linguist-vendored
