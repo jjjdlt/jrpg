@@ -44,7 +44,6 @@
       <Folder Include="UI\Widgets\" />
       <Folder Include="Util\Extensions\" />
       <Folder Include="Util\Helpers\" />
-      <Folder Include="World\Maps\Tiles\" />
       <Folder Include="World\Time\" />
       <Folder Include="World\Weather\" />
     </ItemGroup>

@@ -1,20 +1,21 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using JRPG.Engine;
 
 namespace JRPG.UI.Screens.MainMenu
 {
     public class MainMenu
     {
-        private SpriteBatch _spriteBatch;
-        private Texture2D _menuTexture;
+        private readonly SpriteBatch _spriteBatch;
+        private Texture2D _menuTexture;  // Removed readonly since we need to load it after construction
         private Rectangle _menuRect;
-        private bool _isVisible = true;
-        private bool _isActive = true;  // New flag to control menu state
+        private readonly GameState _gameState;
 
-        public MainMenu(Game game)
+        public MainMenu(Game game, GameState gameState)
         {
             _spriteBatch = new SpriteBatch(game.GraphicsDevice);
+            _gameState = gameState;
             LoadContent(game);
             InitializeMenu(game.GraphicsDevice.Viewport);
         }
@@ -31,12 +32,13 @@ namespace JRPG.UI.Screens.MainMenu
 
         public void Update(GameTime gameTime)
         {
-            if (!_isVisible || !_isActive) return;
+            // Only update if we're in the menu state
+            if (_gameState.CurrentState != GameStateType.MainMenu)
+                return;
 
             MouseState mouseState = Mouse.GetState();
             Point mousePoint = mouseState.Position;
 
-            // Using the exact coordinates you provided for the single player button
             Rectangle singlePlayerButton = new Rectangle(819, 564, 248, 50);
 
             if (mouseState.LeftButton == ButtonState.Pressed)
@@ -50,7 +52,9 @@ namespace JRPG.UI.Screens.MainMenu
 
         public void Draw(GameTime gameTime)
         {
-            if (!_isVisible) return;
+            // Only draw if we're in the menu state
+            if (_gameState.CurrentState != GameStateType.MainMenu)
+                return;
 
             _spriteBatch.Begin();
             _spriteBatch.Draw(_menuTexture, _menuRect, Color.White);
@@ -61,22 +65,13 @@ namespace JRPG.UI.Screens.MainMenu
         {
             if (selection == "SinglePlayer")
             {
-                // Hide and deactivate the menu when entering the game
-                _isVisible = false;
-                _isActive = false;
+                _gameState.ChangeState(GameStateType.InGame);
             }
         }
 
         public void HandleResize(Viewport viewport)
         {
             _menuRect = new Rectangle(0, 0, viewport.Width, viewport.Height);
-        }
-
-        // Method to show/hide menu
-        public void ToggleVisibility()
-        {
-            _isVisible = !_isVisible;
-            _isActive = _isVisible;  // Only allow interaction when visible
         }
     }
 }

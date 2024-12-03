@@ -23,7 +23,7 @@
 /home/jj/RiderProjects/JRPG/JRPG/obj/Debug/net8.0/JRPG.pdb
 /home/jj/RiderProjects/JRPG/JRPG/obj/Debug/net8.0/JRPG.genruntimeconfig.cache
 /home/jj/RiderProjects/JRPG/JRPG/obj/Debug/net8.0/ref/JRPG.dll
-/home/jj/RiderProjects/JRPG/JRPG/bin/Debug/net8.0/Content/dummy_spritesheet.xnb
 /home/jj/RiderProjects/JRPG/JRPG/obj/Debug/net8.0/JRPG.sourcelink.json
-/home/jj/RiderProjects/JRPG/JRPG/bin/Debug/net8.0/Content/background.xnb
 /home/jj/RiderProjects/JRPG/JRPG/bin/Debug/net8.0/Content/mainmenu.xnb
+/home/jj/RiderProjects/JRPG/JRPG/bin/Debug/net8.0/Content/test_spritesheet.xnb
+/home/jj/RiderProjects/JRPG/JRPG/bin/Debug/net8.0/Content/pokemon_tileset.xnb
